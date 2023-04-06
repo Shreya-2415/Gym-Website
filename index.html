@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shreya Fitness center</title>
+        <link rel="stylesheet" href="style.css">
+        
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,200;1,100&family=Merriweather:wght@700&family=Source+Sans+Pro:wght@300&display=swap');
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('gym.jpeg');
+        background-size: 1500px 900px;
+        color: aliceblue;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 32px;
+        top: 22px;
+    }
+
+    .left img {
+        margin-left: 17px;
+        height: 60px;
+        width: 60px;
+        filter: invert(100);
+    }
+
+    .left div{
+        text-align: center;
+        line-height: 35px;
+        font-size: 16px;
+    }
+
+    .mid {
+        /* border: 4px solid blue; */
+        /* to bring it to center set display, width and margin as follows*/
+        display: block;
+        width: 39%;
+        margin: 29px auto;
+    }
+
+    .right {
+        /* border: 2px solid green; */
+        display: inline-block;
+        position: absolute;
+        right: 32px;
+        top: 22px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: aliceblue;
+        text-decoration: none;
+        padding: 15px;
+        font-family: 'Merriweather', serif;
+    }
+
+    .navbar li a:hover {
+        color: rgb(192, 214, 146);
+        text-decoration: underline;
+        padding: 15px;
+    }
+
+    .btn{
+        margin: 0 9px;
+        background-color: black;
+        color: aliceblue;
+        padding: 8px 12px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Merriweather', serif;
+    }
+
+    .btn:hover{
+        background-color: rgb(31, 30, 30);
+    }
+
+    .btn a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .container{
+        border: 8px solid white;
+        border-radius: 8px;
+        margin: 200px 488px;
+        padding: 32px 54px;
+        width: 33%;
+        border-radius: 12px;
+    }
+
+    .container h1{
+        text-align: center;
+        background-color: black;
+    }
+
+    .container button{
+        display: block;
+        width: 244px;
+        margin: auto;
+        border-radius: 12px;
+        margin: 10px auto;
+    }
+
+    .form-group input{
+        display: block;
+        text-align: center;
+        width: 240px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 17px;
+        border-radius: 12px;
+        font-family: 'Merriweather', serif;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.jpg" alt="logo">
+            <div>
+                Shreya Fitness
+            </div>
+        </div>
+        <!-- mid box for navigation-bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/About us.html">About us</a></li>
+                <li><a href="/calc.html">Classes</a></li>
+                <li><a href="/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn"><a href="/call.html">Call us now</a></button>
+            <button class="btn"><a href="/mail.html"> Email us</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now.</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone no.">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
